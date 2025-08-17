@@ -32,9 +32,13 @@ jobs:
                 newman run 'In Warranty Flow CollectionFor CLI_external data.postman_collection.json' \
                 -e QA.postman_environment.json \
                 -d testdata.csv \
-                -r cli,htmlextra
+                -r cli,htmlextra \
+                --reporter-htmlextra-export newman/report.html \
+                --reporter-json-export newman/report.json \
+                --reporter-cli-no-truncate
 
-          - name: Upload a Build Artifact    
+          - name: Newman Report
+            if: always() #ensure that the archieve executed irrespective whether the previous step has passed or not
             uses: actions/upload-artifact@v4.6.2
             with:
                 name: Newman Report
