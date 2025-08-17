@@ -33,8 +33,7 @@ jobs:
                 -e QA.postman_environment.json \
                 -d testdata.csv \
                 -r cli,htmlextra \
-                --reporter-htmlextra-export ./newman/report.html \
-                --reporter-json-export ./newman/report.json \
+                --reporter-htmlextra-export ./newman/index.html \
                 --reporter-cli-no-truncate
 
           - name: Newman Report
