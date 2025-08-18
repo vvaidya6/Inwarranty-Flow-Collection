@@ -42,6 +42,7 @@ newman run "In Warranty Flow Collection.postman_collection.json" \
    -e QA.postman_environment.json \
    -d testdata.csv \
    -r cli,htmlextra
+   
 🔄 GitHub Actions Workflow
 This repo uses a workflow file at .github/workflows/postman-tests.yml.
 
