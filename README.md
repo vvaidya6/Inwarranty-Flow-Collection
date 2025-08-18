@@ -8,9 +8,13 @@ It uses **Newman** (Postman CLI runner) integrated with **GitHub Actions** for a
 ## 📂 Repository Structure
 .
 ├── In Warranty Flow Collection.postman_collection.json # Main Postman collection
+
 ├── QA.postman_environment.json # QA environment variables
+
 ├── testdata.csv # Test data for collection
+
 ├── .github/workflows/postman-tests.yml # GitHub Actions workflow
+
 └── README.md # Project documentation
 
 
