@@ -13,9 +13,6 @@ It uses **Newman** (Postman CLI runner) integrated with **GitHub Actions** for a
 ├── .github/workflows/postman-tests.yml # GitHub Actions workflow
 └── README.md # Project documentation
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -31,13 +28,8 @@ Edit
 ## ⚙️ How to Run Locally
 1. Install [Node.js](https://nodejs.org) (v16+ recommended).
 2. Install Newman:
-   ```bash
-   npm install -g newman newman-reporter-htmlextra
+  npm install -g newman newman-reporter-htmlextra
 Run the collection:
-
-bash
-Copy
-Edit
 newman run "In Warranty Flow Collection.postman_collection.json" \
    -e QA.postman_environment.json \
    -d testdata.csv \
@@ -49,11 +41,9 @@ This repo uses a workflow file at .github/workflows/postman-tests.yml.
 Runs automatically:
 
 Every weekday at 11:30 AM IST
-
 Daily at 8:00 AM IST and 7:30 PM IST
 
 Generates Newman reports (.html + .json)
-
 Uploads them as artifacts after each run.
 
 📊 Reports
@@ -68,10 +58,6 @@ Vaibhav Vaidya (Repo owner & maintainer)
 
 📌 Notes
 If you face assertion limit issues, update Newman CLI options to include:
-
-bash
-Copy
-Edit
 --reporter-cli-no-truncate
 --reporter-json-export newman/report.json
 --reporter-htmlextra-export newman/report.html
