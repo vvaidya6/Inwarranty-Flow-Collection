@@ -5,8 +5,8 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:               
-    - cron: 30 02 * * *   # 8am IST every day
-    - cron: 00 14 * * *   # 7.30pm IST every day
+   # - cron: 30 02 * * *   # 8am IST every day
+   # - cron: 00 14 * * *   # 7.30pm IST every day
     - cron: 00 06 * * 1-5 # 11.30am IST Monday to Friday
 
 jobs:
@@ -59,7 +59,7 @@ jobs:
               username: ${{ secrets.EMAIL_USERNAME }}
               password: ${{ secrets.EMAIL_PASSWORD }}
               subject: "Pheonix Inwarranty Flow Test Executions"
-              to: "priyapethe95@gmail.com, mailmevaibhavvaidya@gmail.com"
+              to: "priyapethe3@gmail.com"
               from: "<${{ secrets.EMAIL_USERNAME }}>"
               body: |
                   Hello Team,
