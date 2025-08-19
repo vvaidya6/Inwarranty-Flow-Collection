@@ -54,7 +54,7 @@ You can run the project on your local system for that:
 5. Run the Newman command:
    
    ```
-              newman run 'Inwarranty-flow Collection.postman_collection.json' \  
+              newman run 'In Warranty Flow CollectionFor CLI_external data.postman_collection.json' \  
              -e QA.postman_environment.json \
              -d testdata.csv \
              -r cli,htmlextra \
